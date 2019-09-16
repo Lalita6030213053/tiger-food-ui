@@ -5,8 +5,7 @@
 
 <title>Login-TigerFood</title>
 
-<!-- <ons-navigator swipeable id="myNavigator" page="login.html"></ons-navigator> -->
-<ons-page id="page-login">
+<ons-page id="page-login" style="background-color: yellow;">
 
   <div style="text-align: center; margin-top: 150px; width: 100%;">
     <h1>Login</h1>
@@ -18,13 +17,13 @@
       <ons-input style="width: 25%" id="password" modifier="underbar" type="password" placeholder="Password" float>
       </ons-input>
     </p>
-    <p style="margin-top: 30px;"></p>
-    <ons-button style="width: 25%" onclick="alert('Success!!')">Log in</ons-button>
+    <p style="margin-top: 30px;">
+    <ons-button style="width: 25%; background-color: black; color: yellow" onclick="alert('Success!!')">Log in</ons-button>
     </p>
     <br>
     <p>
-      <ons-button style="width: 12.5%" onclick="alert('Success!!')">Facebook</ons-button>
-      <ons-button style="width: 12.5%" onclick="alert('Success!!')">Gmail</ons-button>
+      <ons-button style="width: 12.5%; background-color: red" onclick="alert('Success!!')">Facebook</ons-button>
+      <ons-button style="width: 12.5%; background-color: forestgreen" onclick="alert('Success!!')">Gmail</ons-button>
     </p>
   </div>
 </ons-page>

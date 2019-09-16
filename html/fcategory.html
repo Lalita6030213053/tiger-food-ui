@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
 <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+<script src="https://unpkg.com/onsenui/js/onsenui.js"></script>
 
 <title>Category-TigerFood</title>
+
+<ons-navigator id="myNavigator" page="fcategory.html"></ons-navigator>
 
 <ons-page id="fcate" style="background-color: yellow;">
 
@@ -24,52 +26,93 @@
   </ons-toolbar>
 
   <div class="center">
-    <ons-card style="text-align: center; width: 100%;">
-      <img src="https://sites.google.com/site/khnmthiyask/_/rsrc/1482554513973/home/70940_full.jpg" style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">ขนมไทย</div>
-    </ons-card>
 
-    <ons-card style="text-align: center; width:100%;">
-      <img
-        src="https://thestandard.co/wp-content/uploads/2019/07/%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B9%84%E0%B8%82%E0%B9%88%E0%B8%A1%E0%B8%B8%E0%B8%81-Cover.jpg"
-        style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">ชาไข่มุก</div>
-    </ons-card>
+    <ons-row>
 
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="https://sites.google.com/site/khnmthiyask/_/rsrc/1482554513973/home/70940_full.jpg"
+            style="width: 40%">
+          <div class="card__title" style="text-align: center; margin: 20;">ขนมไทย</div>
+        </ons-card>
+      </ons-col>
 
-    <ons-card style="text-align: center; width:100%;">
-      <img src="https://www.thairath.co.th/media/4DQpjUtzLUwmJZZPDd1CzORMTkw13yfh1w2N7PEKML8k.jpg" style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">คนรักเส้น</div>
-    </ons-card>
-
-
-    <ons-card style="text-align: center; width:100%;">
-      <img src="https://img.jakpost.net/c/2016/09/29/2016_09_29_12990_1475116504._large.jpg" style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">เมนูเร่งรีบ</div>
-    </ons-card>
-
-    <ons-card style="text-align: center; width:100%;">
-      <img src="http://makinkan.com/upload/blog/2017/11/ed11f3a0741d88f2ce80c00eab5f7d72.jpg" style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">ติ่มซำ</div>
-    </ons-card>
-
-    <ons-card style="text-align: center; width:100%;">
-      <img src="https://img.tsood.com/large/tnews_1478344156_7172.jpg" style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">ข้าวมันไก่</div>
-    </ons-card>
-
-    <ons-card style="text-align: center; width: 100%;">
-      <img src="https://www.thairath.co.th/media/4DQpjUtzLUwmJZZPFCWcyo0SmkHaxJnRLJKmwRP2jIbp.jpg" style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">คอกาแฟ</div>
-    </ons-card>
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="https://thestandard.co/wp-content/uploads/2019/07/%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B9%84%E0%B8%82%E0%B9%88%E0%B8%A1%E0%B8%B8%E0%B8%81-Cover.jpg"
+            style="width: 50%">
+          <div class="card__title" style="text-align: center; margin: 20;">ชาไข่มุก</div>
+        </ons-card>
+      </ons-col>
+      
+    </ons-row>
 
 
-    <ons-card style="text-align: center; width:100%;">
-      <img
-        src="http://www.homenayoo.com/wp-content/uploads/2015/10/12132408_10200997651140559_2328022801410009362_o.jpg"
-        style="width: 60%">
-      <div class="card__title" style="text-align: center; margin: 20;">อาหารตามสั่ง</div>
-    </ons-card>
+    <ons-row>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="https://www.thairath.co.th/media/4DQpjUtzLUwmJZZPDd1CzORMTkw13yfh1w2N7PEKML8k.jpg"
+            style="width: 50%">
+          <div class="card__title" style="text-align: center; margin: 20;">คนรักเส้น</div>
+        </ons-card>
+      </ons-col>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="https://img.jakpost.net/c/2016/09/29/2016_09_29_12990_1475116504._large.jpg" 
+          style="width: 40%">
+          <div class="card__title" style="text-align: center; margin: 20;">เมนูเร่งรีบ</div>
+        </ons-card>
+      </ons-col>
+
+    </ons-row>
+
+
+    <ons-row>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="http://makinkan.com/upload/blog/2017/11/ed11f3a0741d88f2ce80c00eab5f7d72.jpg" 
+          style="width: 50%">
+          <div class="card__title" style="text-align: center; margin: 20;">ติ่มซำ</div>
+        </ons-card>
+      </ons-col>
+
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="https://img.tsood.com/large/tnews_1478344156_7172.jpg" 
+          style="width: 50%">
+          <div class="card__title" style="text-align: center; margin: 20;">ข้าวมันไก่</div>
+        </ons-card>
+      </ons-col>
+
+    </ons-row>
+
+
+    <ons-row>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img src="https://www.thairath.co.th/media/4DQpjUtzLUwmJZZPFCWcyo0SmkHaxJnRLJKmwRP2jIbp.jpg"
+            style="width: 40%">
+          <div class="card__title" style="text-align: center; margin: 20;">คอกาแฟ</div>
+        </ons-card>
+      </ons-col>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;">
+          <img
+            src="http://www.homenayoo.com/wp-content/uploads/2015/10/12132408_10200997651140559_2328022801410009362_o.jpg"
+            style="width: 40%">
+          <div class="card__title" style="text-align: center; margin: 20;">อาหารตามสั่ง</div>
+        </ons-card>
+      </ons-col>
+
+    </ons-row>
+
+
   </div>
 </ons-page>
 <script src="/js/fcate.js"></script>

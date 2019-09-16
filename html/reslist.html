@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
 <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+<script src="https://unpkg.com/onsenui/js/onsenui.js"></script>
 
 <title>Resturant List-TigerFood</title>
 
@@ -18,7 +18,36 @@
         </div>
     </ons-toolbar>
 
+    <!-- <div style="margin: 20px auto 5px; text-align: center;">Who's watching?</div> -->
 
+    <ons-row class="user_cover">
+        <ons-col onclick="openHome()">
+            <div class="user_thumbnail" style="background-color: #dd6218; padding: 20%;">
+                <ons-icon icon="fa-beer"></ons-icon>
+            </div>
+            <div class="username" id="user_2_name">David</div>
+        </ons-col>
+        <ons-col onclick="openHome()">
+            <div class="user_thumbnail" style="background-color: #00a899">
+                <ons-icon icon="fa-heart"></ons-icon>
+            </div>
+            <div class="username" id="user_2_name">Marta</div>
+        </ons-col>
+    </ons-row>
+    <ons-row class="user_cover">
+        <ons-col onclick="openHome()">
+            <div class="user_thumbnail" style="background-color: #e3aa05">
+                <ons-icon icon="fa-headphones"></ons-icon>
+            </div>
+            <div class="username" id="user_2_name">Mark</div>
+        </ons-col>
+        <ons-col onclick="openHome()">
+            <div class="user_thumbnail" style="background-color: #94b052">
+                <ons-icon icon="fa-gamepad"></ons-icon>
+            </div>
+            <div class="username" id="username_4">Kevin</div>
+        </ons-col>
+    </ons-row>
 
     <ons-list>
         <ons-lazy-repeat id="infinite-list"></ons-lazy-repeat>

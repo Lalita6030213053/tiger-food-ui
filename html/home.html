@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+<script src="https://unpkg.com/onsenui/js/onsenui.js"></script>
+
+<title>Category-TigerFood</title>
+
+
+<ons-page id="homePage">
+
+  <p style="text-align: center; margin-top: 20px;">
+    <ons-search-input style="width: 50%;" placeholder="Search"
+      onchange="ons.notification.alert('Searched for: ' + this.value)"></ons-search-input>
+  </p>
+
+  <ons-toolbar style="text-align: center; background-color: black;">
+    <div class="center">
+      <b style="text-align: center; text-shadow: 0.1em 0.1em 0.05em #333; color: chocolate; font-size: 30px;">Tiger
+        Food</b>
+    </div>
+
+  </ons-toolbar>
+
+
+  <div style="text-align: center;">
+    <div class="thumbnail" id="thumbnail">
+    <ons-carousel class="carousel"  swipeable auto-scroll id="carousel" style="text-align: center;">
+      <ons-carousel-item>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/thumbnail%2FItem1.jpg?alt=media&token=38de1035-d341-4431-abea-e3096e0c7151"
+          style="width: 100%">
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/thumbnail%2FItem2.jpg?alt=media&token=f3a52d77-ebe7-49bd-9c48-5842e2d615f5"
+          style="width: 100%">
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/thumbnail%2FItem3.jpg?alt=media&token=d0f8d091-170d-4850-b6e8-3923902655e4"
+          style="width: 100%">
+      </ons-carousel-item>
+
+      <ons-carousel-item>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/thumbnail%2FItem4.jpg?alt=media&token=828da1c2-6137-4d5d-bbd5-2c2c30f2d5ef"
+          style="width: 100%">
+      </ons-carousel-item>
+    </ons-carousel>
+  </div>
+
+  <div class="menu" id="menu">
+    <ons-row>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B9%84%E0%B8%97%E0%B8%A2.jpg?alt=media&token=1fac117b-7e47-4d9a-baf1-6cacea4e5f14"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">ขนมไทย</div>
+        </ons-card>
+      </ons-col>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99.jpg?alt=media&token=4fc556b2-d5f1-4b08-88be-44a32114d76f"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">รวมเส้น</div>
+        </ons-card>
+      </ons-col>
+
+    </ons-row>
+
+
+    <ons-row>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%81%E0%B9%88.jpg?alt=media&token=b54c1aea-5fec-4c7b-9fc9-4bde761eac39"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">ข้าวมันไก่</div>
+        </ons-card>
+      </ons-col>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B9%80%E0%B8%A3%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B5%E0%B8%9A.jpg?alt=media&token=634f55e2-61e0-4a13-9d63-f977f977e22a"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">คอกาแฟ</div>
+        </ons-card>
+      </ons-col>
+
+    </ons-row>
+
+
+    <ons-row>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B9%88%E0%B8%87.jpg?alt=media&token=b9eea05f-bfe6-48ed-9b75-3585c430997f"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">อาหารตามสั่ง</div>
+        </ons-card>
+      </ons-col>
+
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B8%95%E0%B8%B4%E0%B9%89%E0%B8%A1%E0%B8%8B%E0%B8%B3.jpg?alt=media&token=04b5d130-e1f6-425c-a335-c12c9dd25218"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">ติ่มซำ</div>
+        </ons-card>
+      </ons-col>
+
+    </ons-row>
+
+
+    <ons-row>
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B9%84%E0%B8%82%E0%B9%88%E0%B8%A1%E0%B8%B8%E0%B8%81.jpg?alt=media&token=df8e1588-7134-4c9a-b2c9-1b93723c98d3"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">ชาไข่มุก</div>
+        </ons-card>
+      </ons-col>
+
+      <ons-col onclick="openCate()">
+        <ons-card style="text-align: center;" onClick="location.href='resmenu.html'">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/category%2F%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F.jpg?alt=media&token=4e2ad590-6f4d-4873-8aaa-c5f55bce27f8"
+            style="width: 100%">
+          <div class="card__title" style="text-align: center; margin: 20;">คอกาแฟ</div>
+        </ons-card>
+      </ons-col>
+    </ons-row>
+  </div>
+
+  </div>
+</ons-page>
+<script src="/js/fcate.js"></script>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
 </head>
 
@@ -31,15 +32,19 @@
             Food</b>
         </div>
       </ons-toolbar>
-
-      <ons-tabbar swipeable position="auto" style=" background-color:black; ">
-        <ons-tab page="/home.html" style="background-color:black;" active>
+      <ons-speed-dial position="bottom right" direction="up">
+        <ons-fab>
+          <ion-icon name="log-out"></ion-icon>
+        </ons-fab>
+      </ons-speed-dial>
+      <!-- <ons-tabbar swipeable position="auto" style=" background-color:black; ">
+        <ons-tab page="home.html" style="background-color:black;" active>
           <ons-icon class="icon" icon="fa-home, material:md-home" style="color:#FFCC33"></ons-icon>
         </ons-tab>
 
-        <ons-tab page="/login.html" style=" background-color:black;">
+        <ons-tab page="login.html" style=" background-color:black;">
           <ons-icon class="icon" icon="fa-compass, material:md-compass" style="color:#FFCC33;"></ons-icon>
-        </ons-tab>
+        </ons-tab> -->
 
       </ons-tabbar>
 
@@ -90,7 +95,7 @@
   </template>
 
 
-
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <script src="js/onsenui.js"></script>
   <script src="jquery/jquery-3.4.1.min.js"></script>
 

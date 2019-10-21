@@ -1,0 +1,143 @@
+<ons-page id="categoryPage">
+    <ons-toolbar>
+        <div class="left">
+            <!-- Toolbar-button with different icons depending on the platform. -->
+            <ons-toolbar-button id="menubtn">
+                <ons-icon icon="ion-navicon, material:md-menu" size="32px, material:24px"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">Category</div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-user-circle"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <div class="content" style="text-align: center;">
+        <ons-row class="category">
+            <ons-col modifier="nodivider">
+                <h2 id="header" class="category_header_title"></h2>
+            </ons-col>
+        </ons-row>
+        <div id="list">
+
+        </div>
+    </div>
+
+</ons-page>
+
+<div class="center toolbar__center toolbar__title">Category</div>
+<div class="right toolbar__right">
+    <ons-toolbar-button class="toolbar-button">
+        <ons-icon icon="fa-user-circle" class="ons-icon fa-user-circle fa"></ons-icon>
+    </ons-toolbar-button>
+</div>
+</ons-toolbar>
+<div class="page__background"></div>
+<div class="content page__content" style="text-align: center;">
+    <ons-row class="category">
+        <ons-col modifier="nodivider">
+            <h2 id="header" class="category_header_title">thai</h2>
+        </ons-col>
+    </ons-row>
+    <div id="list">
+        <ons-row class="category">
+            <ons-col modifier="nodivider">
+                <div class="category_header"
+                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/food247-5905e.appspot.com/o/recommended%2Fthumb3.png?alt=media&amp;token=fd217b6d-8861-4895-9e01-22c7e8c669d5')">
+                    <figure class="category_thumbnail" id="thaibtn">
+                        <div class="category_title" id="Category_1_name">Coff Cafe</div>
+                    </figure>
+                </div>
+            </ons-col>
+        </ons-row>
+        <ons-row class="category">
+            <ons-col modifier="nodivider">
+                <div class="category_header"
+                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/food247-5905e.appspot.com/o/recommended%2Fthumb4.png?alt=media&amp;token=c332a50f-6bc3-490e-98b8-c223851a36fd')">
+                    <figure class="category_thumbnail" id="thaibtn">
+                        <div class="category_title" id="Category_1_name">Kaw Ee Mai</div>
+                    </figure>
+                </div>
+            </ons-col>
+        </ons-row>
+        <ons-row class="category">
+            <ons-col modifier="nodivider">
+                <div class="category_header"
+                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/food247-5905e.appspot.com/o/recommended%2Fthumb5.png?alt=media&amp;token=fbe493c5-30b1-4e1f-81c8-f8e46bb1aa93')">
+                    <figure class="category_thumbnail" id="thaibtn">
+                        <div class="category_title" id="Category_1_name">Tum 101</div>
+                    </figure>
+                </div>
+            </ons-col>
+        </ons-row>
+    </div>
+</div>
+
+
+</ons-page>
+</ons-splitter-content>
+<ons-splitter-mask></ons-splitter-mask>
+</ons-splitter>
+</div>
+</ons-page>
+</ons-navigator>
+
+
+<!-- Second navigation component: Splitter. This will disappear if the first component changes its content. -->
+<template id="splitter.html">
+    <ons-page>
+        <ons-splitter id="mySplitter">
+            <ons-splitter-side id="sidemenu" page="menu.html" swipeable="" width="250px" collapse=""
+                swipe-target-width="50px">
+            </ons-splitter-side>
+            <ons-splitter-content page="home.html" id="content">
+            </ons-splitter-content>
+        </ons-splitter>
+    </ons-page>
+</template>
+
+<script src="lib/onsen/js/onsenui.js"></script>
+<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+        (function () {
+            function refreshCSS() {
+                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                }
+            }
+            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    }
+    else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+	// ]]>
+</script>

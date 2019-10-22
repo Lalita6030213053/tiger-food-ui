@@ -60,7 +60,7 @@ document.addEventListener('init', function (event) {
     db.collection("recommended").get().then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
         var item = `<ons-carousel-item modifier="nodivider" id="${doc.data().RecID}" class="recomended_item">  
-        <img src="${doc.data().RecUrl}" alt="" style="width:400px ; height:250px" >
+        <img src="${doc.data().RecUrl}" style="width:400px ; height:250px" >
         </ons-carousel-item>`;
         $("#carousel").append(item);
       });

@@ -1,41 +1,52 @@
 <ons-page id="coffeePage">
     <ons-toolbar style="text-align: center; background-color: black;">
 
-    <div class="right">
-      <ons-toolbar-button>
-        <ons-icon icon="fa-user-circle"></ons-icon>
-      </ons-toolbar-button>
-    </div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-user-circle"></ons-icon>
+            </ons-toolbar-button>
+        </div>
 
-    <div class="center">
-      <b style="text-align: center; text-shadow: 0.1em 0.1em 0.05em #333; color: chocolate; font-size: 30px;">
-        Tiger Food</b>
-    </div>
+        <div class="center">
+            <b style="text-align: center; text-shadow: 0.1em 0.1em 0.05em #333; color: chocolate; font-size: 30px;">
+                Tiger Food</b>
+        </div>
 
-    <div class="left">
+        <div class="left">
             <ons-back-button></ons-back-button>
-        </div>  
-  </ons-toolbar>
+        </div>
+    </ons-toolbar>
+    <ons-speed-dial position="bottom right" direction="up">
+        <ons-fab>
+            <ion-icon name="ios-log-out" size="large"></ion-icon>
+        </ons-fab>
+        <ons-speed-dial-item onClick="location.href='index.html'">
+            <ion-icon name="ios-close-circle" size="large"></ion-icon>
+        </ons-speed-dial-item>
+        <ons-speed-dial-item onClick="location.href='login.html'">
+            <ion-icon name="ios-checkmark-circle" size="large"></ion-icon>
+        </ons-speed-dial-item>
+    </ons-speed-dial>
 
 
     <ons-card style="text-align: left;">
         <div class="card__title" style="text-align: left; padding: 20px; height: 20;">บ้านขนมไทยชาววัง</div>
-        จันทร์ - เสาร์	07:00 - 15:00 
+        จันทร์ - เสาร์ 07:00 - 15:00
     </ons-card>
 
     <ons-card style="text-align: left;">
         <div class="card__title" style="text-align: left; padding: 20px; height: 20;">ทับทิมกรอบ บขส เก่า</div>
-        ทุกวัน	18:30 - 23:59
+        ทุกวัน 18:30 - 23:59
     </ons-card>
 
     <ons-card style="text-align: left;">
         <div class="card__title" style="text-align: left; padding: 20px; height: 20;">น้ำเต้าหู้เยาวราช</div>
-        จันทร์ - เสาร์	07:00 - 15:00
+        จันทร์ - เสาร์ 07:00 - 15:00
     </ons-card>
 
     <ons-card style="text-align: left;">
         <div class="card__title" style="text-align: left; padding: 20px; height: 20;">น้ำเต้าหู้เที่ยงคืน สาขา 7</div>
-        ทุกวัน	10:00 - 23:59
+        ทุกวัน 10:00 - 23:59
     </ons-card>
 
     <ons-card style="text-align: left;">
@@ -43,10 +54,10 @@
         จันทร์ - เสาร์ : 18:00 - 22:00
     </ons-card>
 
-<style>
-.page__background,
-    .page__content {
-        background-color: yellow;
-    }
+    <style>
+        .page__background,
+        .page__content {
+            background-color: yellow;
+        }
     </style>
-    </ons-page>
+</ons-page>

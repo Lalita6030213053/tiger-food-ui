@@ -1,32 +1,83 @@
-<ons-page>
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+
+<ons-page id="regisPage">
     <div style="text-align: center; margin-top: 100px">
-        <h1>Register an Account</h1>
-        <h5>By registering an account, you accept all terms and conditions</h5>
-        <p>
-            <ons-input style="width: 38%" id="username" placeholder="Full Name" modifier="underbar"></ons-input>
-        </p>
+            <h1><b style="text-shadow: 0.1em 0.1em 0.05em #333; color: chocolate; font-size: 50px;">Tiger Food</b></h1>
+        <img src="images/tigerlogo.jpg" width="60%" height="auto">
+        <div class="content">     
+            <p>
+                <ons-input style="width: 38%" id="username" placeholder="Full Name" modifier="underbar"></ons-input>
+            </p>
 
-        <p>
-            <ons-input style="width: 38%" id="email" placeholder="Email Address" modifier="underbar"></ons-input>
-        </p>
-        <p>
-            <ons-input style="width: 38%" id="phone" placeholder="Phone Number" modifier="underbar"></ons-input>
-        </p>
-        <p>
-            <ons-input style="width: 38%" id="password" placeholder="Password" type="password" modifier="underbar">
-            </ons-input>
-        </p>
+            <p>
+                <ons-input style="width: 38%" id="email" placeholder="Email Address" modifier="underbar"></ons-input>
+            </p>
+            <p>
+                <ons-input style="width: 38%" id="phone" placeholder="Phone Number" modifier="underbar"></ons-input>
+            </p>
+            <p>
+                <ons-input style="width: 38%" id="password" placeholder="Password" type="password" modifier="underbar">
+                </ons-input>
+            </p>
 
-        <ons-button style="width: 40%; background-color: black; color: yellow">Register</ons-button>
-        <p> or <br></p>
+            <ons-button onClick="location.href='login.html'" style="width: 40%; background-color: black; color: yellow">Register</ons-button>
+            <p> or <br></p>
 
-        <ons-button style="width: 20%; background-color: red">Facebook</ons-button>
-        <ons-button style="width: 20%; background-color: forestgreen">Gmail</ons-button>
+            <ons-button onClick="location.href='login.html'" style="width: 20%; background-color: red">Google</ons-button>
+            <ons-button onClick="location.href='login.html'" style="width: 20%; background-color: forestgreen">Email</ons-button>
+        </div>
     </div>
     <style>
         .page__background,
         .page__content {
-            background-color: yellow;
+
+            background-color: rgba(26, 25, 23, 0.965);
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btnsignin {
+
+            background-color: rgb(32, 250, 39);
+            border: 2px solid lightcyan;
+        }
+
+        .btngoogle {
+
+            background-color: rgb(226, 22, 22);
+            border: 2px solid lightblue;
+
+        }
+
+        .btnemail {
+
+            background-color: rgba(245, 19, 87, 0.911);
+            border: 2px solid lightpink;
+        }
+
+        .content {
+            color: darkslategray;
+        }
+
+        #bgPage {
+            background-image: url("images/catbg.jpg"), url("images/tigerlogo.jpg");
+            background-position: center;
+            background-attachment: scroll;
         }
     </style>
 </ons-page>

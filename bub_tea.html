@@ -1,5 +1,5 @@
 <ons-page id="bub_teaPage">
-    <ons-toolbar style="text-align: center; background-color: black;">
+  <ons-toolbar style="text-align: center; background-color: black;">
 
     <div class="right">
       <ons-toolbar-button>
@@ -13,17 +13,28 @@
     </div>
 
     <div class="left">
-            <ons-back-button></ons-back-button>
-        </div>  
+      <ons-back-button></ons-back-button>
+    </div>
   </ons-toolbar>
+  <ons-speed-dial position="bottom right" direction="up">
+    <ons-fab>
+      <ion-icon name="ios-log-out" size="large"></ion-icon>
+    </ons-fab>
+    <ons-speed-dial-item onClick="location.href='index.html'">
+      <ion-icon name="ios-close-circle" size="large"></ion-icon>
+    </ons-speed-dial-item>
+    <ons-speed-dial-item onClick="location.href='login.html'">
+      <ion-icon name="ios-checkmark-circle" size="large"></ion-icon>
+    </ons-speed-dial-item>
+  </ons-speed-dial>
 
-    <ons-card id="bb001" style="text-align: left;">
-        <div class="card__title" style="text-align: left; padding: 20px; height: 20;">Coco de bear</div>
-    </ons-card>
-<style>
-.page__background,
+  <ons-card id="bb001" style="text-align: left;">
+    <div class="card__title" style="text-align: left; padding: 20px; height: 20;">Coco de bear</div>
+  </ons-card>
+  <style>
+    .page__background,
     .page__content {
-        background-color: yellow;
+      background-color: yellow;
     }
-    </style>
+  </style>
 </ons-page>

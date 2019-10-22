@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Tiger Food </title>
 
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
-  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
   <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
-  <!-- <link rel="stylesheet" href="css/app.css"> -->
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
+ 
+  
 </head>
 
 <body>
@@ -23,13 +21,14 @@
   <template id="splitter.html">
     <ons-page>
       <ons-splitter id="mySplitter">
-        <ons-splitter-side id="sidemenu" page="menu.html" swipeable width="250px" collapse swipe-target-width="50px"></ons-splitter-side>
+        <ons-splitter-side id="sidemenu" page="menu.html" swipeable width="250px" collapse swipe-target-width="50px">
+        </ons-splitter-side>
         <ons-splitter-content page="home.html" id="content"></ons-splitter-content>
       </ons-splitter>
     </ons-page>
   </template>
 
-    </ons-page>
+  </ons-page>
 
   <script src="lib/onsen/js/onsenui.js"></script>
   <script src="lib/jquery/jquery-3.4.1.min.js"></script>

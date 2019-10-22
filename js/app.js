@@ -17,39 +17,32 @@ var db = firebase.firestore();
 document.addEventListener('init', function (event) {
   var page = event.target;
 
+//home  
   if (page.id === 'homePage') {
     console.log("homePage");
 
     $("#dessertbtn").click(function () {
-      $("#content")[0].load("category.html");
+      $("#myNavigator")[0].pushPage("dessert.html");
     });
 
     $("#noodlesbtn").click(function () {
-      $("#content")[0].load("category.html");
-    });
-
-    $("#hcrbtn").click(function () {
-      $("#content")[0].load("category.html");
+      $("#myNavigator")[0].pushPage("noodles.html");
     });
 
     $("#ctobtn").click(function () {
-      $("#content")[0].load("category.html");
+      $("#myNavigator")[0].pushPage("cook_order.html");
     });
 
     $("#fastbtn").click(function () {
-      $("#content")[0].load("category.html");
-    });
-
-    $("#dimsumbtn").click(function () {
-      $("#content")[0].load("category.html");
+      $("#myNavigator")[0].pushPage("fast_food.html");
     });
 
     $("#bmtbtn").click(function () {
-      $("#content")[0].load("category.html");
+      $("#myNavigator")[0].pushPage("bub_tea.html");
     });
 
     $("#coffeebtn").click(function () {
-      $("#content")[0].load("category.html");
+      $("#myNavigator")[0].pushPage("coffee.html");
     });
 
     $("#menubtn").click(function () {
@@ -59,27 +52,89 @@ document.addEventListener('init', function (event) {
     $("#carousel").empty();
     db.collection("recommended").get().then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
-        var item = `<ons-carousel-item modifier="nodivider" id="${doc.data().RecID}" class="recomended_item">  
-        <img src="${doc.data().RecUrl}" style="width:400px ; height:250px" >
+        `<ons-carousel-item modifier="nodivider" id="${doc.data().RecID}" class="recomended_item">  
+        <img src="${doc.data().RecUrl}" alt="" style="width:400px ; height:250px" >
         </ons-carousel-item>`;
         $("#carousel").append(item);
       });
     });
   }
 
+//menu
    if (page.id === 'menuPage') {
     console.log("menuPage");
 
     $("#login").click(function () {
-      $("#content")[0].load("login.html");
+      $("#content")[0].pushPage("login.html");
       $("#sidemenu")[0].close();
     });
 
     $("#home").click(function () {
-      $("#content")[0].load("home.html");
+      $("#content")[0].pushPage("home.html");
       $("#sidemenu")[0].close();
     });
   }
 
+//dessert  
+  if (page.id === 'dessertPage') {
+    console.log("dessertPage");
 
+    $("#th001").click(function () {
+      $("#myNavigator")[0].pushPage("/html/thdessert.html");
+    });
+
+    $("#th002").click(function () {
+      $("#myNavigator")[0].pushPage("/html/tubtim.html");
+    });
+
+    $("#th003").click(function () {
+      $("#myNavigator")[0].pushPage("/html/namt_hu.html");
+    });
+
+    $("#th004").click(function () {
+      $("#myNavigator")[0].pushPage("/html/namt_t.html");
+    });
+  }
+
+//noodles
+if (page.id === 'noodlesPage') {
+  console.log("noodlesPage");
+
+  $("#no001").click(function () {
+    $("#myNavigator")[0].pushPage("/html/mi_po.html");
+  });
+
+  $("#no002").click(function () {
+    $("#myNavigator")[0].pushPage("/html/mi_k.html");
+  });
+
+  $("#no003").click(function () {
+    $("#myNavigator")[0].pushPage("/html/cha_k.html");
+  });
+}
+
+//fastfood
+if (page.id === 'fastfoodPage') {
+  console.log("fastfoodPage");
+
+  $("#ff001").click(function () {
+    $("#myNavigator")[0].pushPage("/html/menuKFC.html");
+  });
+}
+
+//buble
+if (page.id === 'bub_teaPage') {
+  console.log("bub_teaPage");
+
+  $("#bb001").click(function () {
+    $("#myNavigator")[0].pushPage("bub_tea.html");
+  });
+}
+
+//login
+$("#backhomebtn").click(function () {
+  $("#myNavigator")[0].pushPage("index.html");
 });
+
+
+  });

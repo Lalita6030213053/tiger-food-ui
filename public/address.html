@@ -1,0 +1,26 @@
+<ons-page id="addressPage">
+    <ons-toolbar style="text-align: center; background-color: black;">
+
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-user-circle"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+
+        <div class="center">
+            <b style="text-align: center; text-shadow: 0.1em 0.1em 0.05em #333; color: chocolate; font-size: 30px;">
+                Address</b>
+        </div>
+
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+    </ons-toolbar>
+
+    <pre id='coordinates' class='coordinates'></pre>
+    <ons-fab position="bottom right" id="setaddress">
+        <ons-icon icon="md-plus"></ons-icon>
+    </ons-fab>
+    <div id='map'></div>
+    
+</ons-page>

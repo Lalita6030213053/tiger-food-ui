@@ -28,19 +28,30 @@
     </ons-speed-dial-item>
   </ons-speed-dial>
 
-  <ons-card id="no001" style="text-align: left;">
-    <div class="card__title" style="text-align: left; padding: 20px; height: 20;">กล้วยเชื่อม</div>
+  <ons-card id="th001" style="text-align: left;" onclick="myToast.toggle()">
+    <div class="card__title" style="text-align: left; padding: 20px; height: 20;" >กล้วยเชื่อม</div> 
+    <!-- <ion-icon name="add-circle-outline"></ion-icon>-->
   </ons-card>
 
-  <ons-card id="no002" style="text-align: left;">
+  <ons-card id="th002" style="text-align: left;" onclick="myToast.toggle()">
     <div class="card__title" style="text-align: left; padding: 20px; height: 20;">กล้วยบวชชี</div>
   </ons-card>
 
-  <ons-card id="no003" style="text-align: left;">
+  <ons-card id="th003" style="text-align: left;" onclick="myToast.toggle()">
     <div class="card__title" style="text-align: left; padding: 20px; height: 20;">ขนมตาล</div>
   </ons-card>
 
-  <ons-card id="no003" style="text-align: left;">
+  <ons-card id="th003" style="text-align: left;" onclick="myToast.toggle()">
     <div class="card__title" style="text-align: left; padding: 20px; height: 20;">ตะโก้</div>
   </ons-card>
+
+<ons-toast id="myToast" animation="ascend">
+  Add to Cart....!!!
+  <button onclick="myToast.hide()" id="addcart">ok</button>
+</ons-toast>
+
+<p style="text-align: center" id="gocart">
+  <ons-button>Go to Cart</ons-button>
+</p>
+
 </ons-page>

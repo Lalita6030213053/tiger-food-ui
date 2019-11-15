@@ -27,7 +27,7 @@
 
   <ons-row>
     <ons-col>
-      <ons-card style="text-align: center;" id="k01">
+      <ons-card style="text-align: center;" id="k01" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2Fkfc_diy.png?alt=media&token=f16e79fe-9860-44b8-bf49-848f3241b98e"
           style="width: 50%; ">
@@ -35,7 +35,7 @@
       </ons-card>
     </ons-col>
     <ons-col>
-      <ons-card style="text-align: center;" id="k02">
+      <ons-card style="text-align: center;" id="k02" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2Fsanders_rice_sudwork.png?alt=media&token=3d8f3cd4-f9bc-4f35-9bda-8546d4e36e8b"
           style="width: 60%; ">
@@ -46,7 +46,7 @@
 
   <ons-row>
     <ons-col>
-      <ons-card style="text-align: center; " id="k03">
+      <ons-card style="text-align: center; " id="k03" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2Fzabb_sanders_rice_sudwork.png?alt=media&token=f0595bc4-5bd7-442e-91a2-a0deedaa4635"
           style="width: 50%; ">
@@ -55,7 +55,7 @@
     </ons-col>
 
     <ons-col>
-      <ons-card style="text-align: center; " id="k04">
+      <ons-card style="text-align: center; " id="k04" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2Fzeed_sanders_rice_sudwork.png?alt=media&token=39d65043-f6c1-4c6f-91ca-f82fd350f9b3"
           style="width: 50%; ">
@@ -66,7 +66,7 @@
 
   <ons-row>
     <ons-col>
-      <ons-card style="text-align: center;" id="k05">
+      <ons-card style="text-align: center;" id="k05" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2FChick_N_Share_WingZ_Zabb.png?alt=media&token=a7531882-12d4-42b4-94f3-39b1154b1336"
           style="width: 50%; ">
@@ -75,7 +75,7 @@
     </ons-col>
 
     <ons-col>
-      <ons-card style="text-align: center; " id="k06">
+      <ons-card style="text-align: center; " id="k06" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2FChick_N_Share_Pop_Nuggets.png?alt=media&token=7bbc542a-11e2-433c-91fb-1b069664e1f8"
           style="width: 50%; ">
@@ -86,7 +86,7 @@
 
   <ons-row>
     <ons-col>
-      <ons-card style="text-align: center; " id="k07" ;>
+      <ons-card style="text-align: center; " id="k07"  onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2Fcheese_bite_and_pop_bucket.png?alt=media&token=b0fd2c69-ca37-4c73-bce6-436305d49984"
           style="width: 50%; ">
@@ -95,7 +95,7 @@
     </ons-col>
 
     <ons-col>
-      <ons-card style="text-align: center; " id="k08">
+      <ons-card style="text-align: center; " id="k08" onclick="myToast.toggle()">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/test-65a51.appspot.com/o/KFCmenu%2Fcheesy_chicken_jujai.png?alt=media&token=99067eda-9b2d-4182-87d2-b700bfc3c5c6"
           style="width: 50%; ">
@@ -103,9 +103,11 @@
       </ons-card>
     </ons-col>
   </ons-row>
-
-</ons-page>
-<style>
+  <ons-toast id="myToast" animation="ascend">
+    Add to Cart....!!!
+    <button onclick="myToast.hide()">ok</button>
+  </ons-toast>
+  <style>
   .back-button {
     height: 44px;
     padding-left: 8px;
@@ -117,3 +119,4 @@
     fill: red;
   }
 </style>
+</ons-page>
